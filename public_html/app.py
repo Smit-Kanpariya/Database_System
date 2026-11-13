@@ -9,7 +9,9 @@ load_dotenv()
 
 # ── Flask Application ──────────────────────────────────────────
 app = Flask(__name__)
-app.secret_key = os.getenv("FLASK_SECRET_KEY", "fallback-secret-key")
+# Set FLASK_SECRET_KEY in public_html/.env (see .env.example). Without it, a random key is
+# generated at start-up, so nothing secret lives in the code.
+app.secret_key = os.getenv("FLASK_SECRET_KEY") or os.urandom(32)
 
 # ── MySQL Configuration ────────────────────────────────────────
 # Replace with your credentials on dbcourse.cs-smu.ca

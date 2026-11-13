@@ -83,7 +83,7 @@ MUC-Database-System/
 └── public_html/                    # Flask web application
     ├── app.py                      # Main app (all 4 operations)
     ├── requirements.txt
-    ├── .env
+    ├── .env.example
     ├── static/style.css
     └── templates/                  # HTML templates (7 files)
 ```
