@@ -3,7 +3,8 @@
 **CSCI 3461 — Group Project**
 Database management system for MUC Used Cars.
 
----
+--
+
 
 ## Prerequisites
 
